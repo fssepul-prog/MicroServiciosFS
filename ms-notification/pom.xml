@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Hereda directamente de Spring Boot — cada microservicio es INDEPENDIENTE -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -23,7 +22,6 @@
         <spring-cloud.version>2023.0.1</spring-cloud.version>
     </properties>
 
-    <!-- BOM de Spring Cloud para las versiones de Eureka, Gateway y OpenFeign -->
     <dependencyManagement>
         <dependencies>
             <dependency>
