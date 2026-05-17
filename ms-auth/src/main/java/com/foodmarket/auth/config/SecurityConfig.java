@@ -19,7 +19,7 @@ public class SecurityConfig {
     }
 
 
-    /** BCryptPasswordEncoder disponible en toda la app */
+    
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
