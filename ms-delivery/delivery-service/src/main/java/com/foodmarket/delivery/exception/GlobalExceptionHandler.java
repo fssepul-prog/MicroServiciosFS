@@ -7,10 +7,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
-/**
- * IE 2.3.1 - @ControllerAdvice centraliza el manejo de errores
- * IE 2.3.2 - @Slf4j con niveles adecuados
- */
 @RestControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
