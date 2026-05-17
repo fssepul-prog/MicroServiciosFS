@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * IE 1.2.1 - CAPA CONTROLLER: expone reportes solo para ADMIN
- * IE 2.3.2 - @Slf4j para log de accesos y consultas de reporte
- */
 @RestController
 @RequestMapping("/reports")
 @RequiredArgsConstructor
