@@ -7,5 +7,4 @@ public class PaymentDTO {
     @NotNull @DecimalMin(value="0.01",message="Monto debe ser mayor a 0") private BigDecimal amount;
     @NotNull @DecimalMin(value="0.00") private BigDecimal deliveryFee;
     @NotBlank(message="Metodo de pago obligatorio") private String method;
-    //comen2
 }
