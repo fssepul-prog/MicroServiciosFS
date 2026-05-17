@@ -1,5 +1,4 @@
 package com.foodmarket.search.controller;
-
 import com.foodmarket.search.model.RestaurantIndex;
 import com.foodmarket.search.repository.RestaurantIndexRepository;
 import lombok.RequiredArgsConstructor;
@@ -43,7 +42,6 @@ public class SearchController {
             result = indexRepo.findAll();
             log.info("[SEARCH] Busqueda general: {} restaurantes", result.size());
         }
-
         return ResponseEntity.ok(result);
     }
 }
