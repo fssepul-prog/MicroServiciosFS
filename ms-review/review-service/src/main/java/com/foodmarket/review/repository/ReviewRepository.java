@@ -5,7 +5,6 @@ import java.util.List;
 public interface ReviewRepository extends JpaRepository<Review,Long> {
     boolean existsByOrderIdAndCustomerIdAndTargetType(Long orderId, Long customerId, TargetType type);
     List<Review> findByTargetIdAndTargetType(Long targetId, TargetType type);
-    // IE 2.1.2 - Custom Query con AVG
     @Query("SELECT AVG(r.rating) FROM Review r WHERE r.targetId=:id AND r.targetType=:type")
     Double findAverageRating(@Param("id") Long targetId, @Param("type") TargetType type);
 }

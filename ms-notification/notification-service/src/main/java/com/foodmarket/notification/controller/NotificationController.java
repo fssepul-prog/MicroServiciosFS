@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * IE 1.2.1 - Controller de notificaciones
- * IE 2.3.2 - @Slf4j para trazabilidad de consultas
- */
 @RestController
 @RequestMapping("/notifications")
 @RequiredArgsConstructor
