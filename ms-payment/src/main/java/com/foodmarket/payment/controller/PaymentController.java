@@ -14,6 +14,5 @@ public class PaymentController {
         if (!"ADMIN".equals(role)) return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         log.info("Reembolso solicitado por ADMIN para pago {}", id);
         return ResponseEntity.ok(paymentService.refund(id, dto));
-        //comen
     }
 }
