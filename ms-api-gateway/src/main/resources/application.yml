@@ -9,23 +9,23 @@ spring:
       routes:
         # Rutas publicas (sin JWT)
         - id: auth-service
-          uri: lb://auth-service
+          uri: lb://ms-auth
           predicates:
             - Path=/auth/**
 
         # Rutas protegidas (JWT validado por JwtAuthFilter)
         - id: user-service
-          uri: lb://user-service
+          uri: lb://ms-user
           predicates:
             - Path=/users/**
 
         - id: restaurant-service
-          uri: lb://restaurant-service
+          uri: lb://ms-restaurant
           predicates:
             - Path=/restaurants/**
 
         - id: order-service
-          uri: lb://order-service
+          uri: lb://ms-order
           predicates:
             - Path=/orders/**
 
